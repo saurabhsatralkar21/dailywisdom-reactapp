@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.Wrapper {
+  padding-top: 150px;
+  display: grid;
+  justify-items: center;
+}
+
+.backgroundImage {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  z-index: -1;
+ }
+
+ .heading {
+  color: whitesmoke;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+.adviseTexts {
+  color: whitesmoke;
+  width: 40%;
+  height: auto;
+  background-color: #6F38C5;
+  opacity: 85%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
