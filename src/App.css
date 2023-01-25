@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
 .App {
   text-align: center;
 }
@@ -38,7 +40,7 @@
 }
 
 .Wrapper {
-  padding-top: 150px;
+  padding-top: 200px;
   display: grid;
   justify-items: center;
 }
@@ -48,6 +50,7 @@
   width: 100%;
   top: 0px;
   z-index: -1;
+  height: 99%;
  }
 
  .heading {
@@ -55,14 +58,21 @@
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
 
-.adviseTexts {
-  color: whitesmoke;
-  width: 40%;
-  height: auto;
+
+.adviseBox {
+  height: 50%;
+  width: 100%;
   background-color: #6F38C5;
-  opacity: 85%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  color: whitesmoke;
+  opacity: 85%;
+  place-items: center;
+}
+
+.adviseBox p {
+  line-height: 6rem;
+  font-family: 'Poppins', sans-serif;
 }

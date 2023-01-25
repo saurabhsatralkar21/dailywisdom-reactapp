@@ -3,17 +3,17 @@ import { useEffect, useState } from "react";
 
 const Wisdom = () => {
 
-    const [advice, setAdvice] = useState("");
+    const [advise, setAdvise] = useState("");
 
 
     useEffect(() => {
-        const adviceEndpoint = "https://api.adviceslip.com/advice";
+        const adviseEndpoint = "https://api.adviceslip.com/advice";
         
         const fetchData = async () => {
         try {
-            const response = await fetch(adviceEndpoint);
+            const response = await fetch(adviseEndpoint);
             const adviseJsonFormat = await response.json(response);
-            setAdvice(adviseJsonFormat.slip.advice)
+            setAdvise(adviseJsonFormat.slip.advice)
         } catch(error){
             console.log(error);
         }
@@ -24,10 +24,10 @@ const Wisdom = () => {
 
     return(
         <div>
-            <h1 className="heading"> Wisdom here </h1>
-            <div className="adviceTexts">
-                {advice}
-            </div>
+            <h1 className="heading"> Wisdom you take, young padawan! </h1>
+            <div className='adviseBox'>
+                <p>{advise}</p>
+              </div>
         </div>
     )
 }
