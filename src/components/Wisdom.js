@@ -20,7 +20,7 @@ const Wisdom = () => {
         }
         fetchData();
 
-    })
+    },[])
 
     return(
         <div>
