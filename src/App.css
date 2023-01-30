@@ -80,3 +80,36 @@
 .forStyle {
   margin: 5px 0 5px 0;
 }
+
+.customButton {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: Tahoma;
+  font-size: 40px;
+  padding: 40px;
+  background-color: #A084DC;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  border: solid #A084DC 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.customButton:hover {
+  border: solid #645CBB 1px;
+  background: #BFACE2;
+  background-image: -webkit-linear-gradient(top, #BFACE2, #645CBB);
+  background-image: -moz-linear-gradient(top, #BFACE2, #645CBB);
+  background-image: -ms-linear-gradient(top, #BFACE2, #645CBB);
+  background-image: -o-linear-gradient(top, #BFACE2, #645CBB);
+  background-image: -webkit-gradient(to bottom, #BFACE2, #645CBB);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}

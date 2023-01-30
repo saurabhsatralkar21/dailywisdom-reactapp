@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import GridLoader from "react-spinners/GridLoader";
+import MoreWisdom from "./MoreWisdom";
 
 const Wisdom = () => {
 
@@ -38,7 +39,9 @@ const Wisdom = () => {
                 
             <GridLoader
             color={'#D9ACF5'} loading={loading} size={15} aria-label="Loading Spinner" data-testid="loader" className="forStyle" />
-                : <p>{advise}</p>
+                : <p>{advise}</p> &&
+                <MoreWisdom />
+
                 }
                 
               </div>
