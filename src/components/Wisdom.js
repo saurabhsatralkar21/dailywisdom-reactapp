@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import CircleLoader from "react-spinners/ClipLoader";
+import GridLoader from "react-spinners/GridLoader";
 
 const Wisdom = () => {
 
@@ -25,17 +25,19 @@ const Wisdom = () => {
         setTimeout(()=>{
             fetchData();
             setLoading(false);
-        }, 3000);
+        }, 4000);
     
     },[])
 
+    
     return(
         <div>
             <h1 className="heading"> Wisdom you take, young padawan! </h1>
             <div className='adviseBox'>
                 { loading ?
                 
-            <CircleLoader color={'#301E67'} loading={loading} size={100} aria-label="Loading Spinner" data-testid="loader" />
+            <GridLoader
+            color={'#D9ACF5'} loading={loading} size={15} aria-label="Loading Spinner" data-testid="loader" className="forStyle" />
                 : <p>{advise}</p>
                 }
                 
